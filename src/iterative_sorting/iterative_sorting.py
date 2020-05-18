@@ -23,7 +23,7 @@ def bubble_sort(arr):
     # loop through all array elements
     for i in range(length - 1):
         #  loop through array from 0 to length -1
-        for j in range(0, length - 1):
+        for j in range(0, length - 1 - i):
             # swap elements if greater than next element
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
